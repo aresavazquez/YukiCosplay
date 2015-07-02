@@ -4,10 +4,12 @@
 }
 /*HEAD EFECTO BURBUJAS*/
 .demo-2 .large-header {
-	background-image: url('../img/diosa.png');
+	background: #742E46;
 	background-size: cover;
 }
 .main-title {
+	font-family: Arizonia;
+	font-size: 50px;
 	position: absolute;
 	margin: 0;
 	padding: 0;
