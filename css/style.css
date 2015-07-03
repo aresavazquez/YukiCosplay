@@ -2,26 +2,61 @@
 	margin: 0;
 	padding: 0;
 }
-/*HEAD EFECTO BURBUJAS*/
+/* HEAD EFECTO BURBUJAS*/
 .demo-2 .large-header {
-	background: #742E46;
+	background: #4C6A8D;
 	background-size: cover;
 }
-.main-title {
-	font-family: Arizonia;
-	font-size: 50px;
+.logo {
+	width: 200px;
 	position: absolute;
 	margin: 0;
 	padding: 0;
 	color: #f9f1e9;
 	text-align: center;
-	top: 50%;
+	top: 20%;
 	left: 50%;
 	-webkit-transform: translate3d(-50%,-50%,0);
 	transform: translate3d(-50%,-50%,0);
 }
+/*//////////////////////////////////////////////*/
+ul {
+  	margin: auto;
+  	display: flex;
+  	color: #000;
+  	font-family: Calligraffitti;
+  	justify-content: center;
+  	flex-wrap: wrap;
+}
+ul li{
+	font-size: 20px;
+  	padding: 30px 50px;
+  	list-style: none;
+}
+.frase{
+	position: absolute;
+  	top: 50%;
+  	width: 60%;
+  	left: 0;
+  	right: 0;
+  	margin: auto;
+  	text-align: center;
+  	font-size: 40px;
+  	font-family: Biryani;
+}
+
+
+
+
+
+
+/*//////////////////////////////////////////////*/
 @media only screen and (max-width : 768px) {
-	.demo-2 .main-title {
+	.logo {
+		width: 250px;
+		top: 200px;
+	}
+	.demo-2 .logo {
 		font-size: 4em;
 	}
 }
