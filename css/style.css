@@ -4,7 +4,7 @@
 }
 /* HEAD EFECTO BURBUJAS*/
 .demo-2 .large-header {
-	background: #4C6A8D;
+	background: #011826;
 	background-size: cover;
 }
 .logo {
@@ -14,35 +14,48 @@
 	padding: 0;
 	color: #f9f1e9;
 	text-align: center;
-	top: 20%;
+	top: 30%;
 	left: 50%;
 	-webkit-transform: translate3d(-50%,-50%,0);
 	transform: translate3d(-50%,-50%,0);
 }
 /*//////////////////////////////////////////////*/
-ul {
-  	margin: auto;
-  	display: flex;
-  	color: #000;
-  	font-family: Calligraffitti;
-  	justify-content: center;
-  	flex-wrap: wrap;
-}
-ul li{
-	font-size: 20px;
-  	padding: 30px 50px;
-  	list-style: none;
-}
 .frase{
 	position: absolute;
   	top: 50%;
-  	width: 60%;
+  	width: 70%;
   	left: 0;
+  	color: #ddd;
   	right: 0;
   	margin: auto;
   	text-align: center;
   	font-size: 40px;
   	font-family: Biryani;
+  	font-weight: 100;
+  	padding: 30px;
+  	text-shadow: 10px 5px 5px #000;
+}
+.large-header a {
+  	position: absolute;
+  	bottom: 30px;
+  	margin: auto;
+  	width: 150px;
+  	left: 0;
+  	right: 0;
+  	text-align: center;
+  	background: rgba(255, 255, 255, 0.5);
+  	padding: 10px;
+  	border-radius: 10px;
+  	color: #011826;
+}
+.large-header a:hover{
+	background: rgba(4, 157, 191, 0.5);
+}
+.contenedorGeneral{
+	background: #023859;
+	width: 100%;
+	height: 100%;
+	display: none;
 }
 
 
@@ -58,5 +71,8 @@ ul li{
 	}
 	.demo-2 .logo {
 		font-size: 4em;
+	}
+	.frase{
+		font-size: 20px;
 	}
 }
