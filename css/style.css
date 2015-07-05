@@ -2,24 +2,48 @@
 	margin: 0;
 	padding: 0;
 }
-/* HEAD EFECTO BURBUJAS*/
-.demo-2 .large-header {
-	background: #011826;
-	background-size: cover;
+body{
+	font-family: Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif
 }
-.logo {
+.preloader{
+	background: #023859;
+	width: 100%;
+	height: 100%;	
+	position: relative;
+	opacity: 1;
+}
+.preloader .logoPreloader {
 	width: 200px;
 	position: absolute;
 	margin: 0;
 	padding: 0;
 	color: #f9f1e9;
 	text-align: center;
-	top: 30%;
+	top: 50%;
 	left: 50%;
 	-webkit-transform: translate3d(-50%,-50%,0);
 	transform: translate3d(-50%,-50%,0);
 }
-/*//////////////////////////////////////////////*/
+.all{
+	display: none;
+}
+/* HEAD EFECTO BURBUJAS*/
+.demo-2 .large-header {
+	background: #011826;
+	background-size: cover;
+}
+.large-header .logo {
+	width: 200px;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: center;
+	top: 15%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
 .frase{
 	position: absolute;
   	top: 50%;
@@ -30,7 +54,8 @@
   	margin: auto;
   	text-align: center;
   	font-size: 40px;
-  	font-family: Biryani;
+  	font-family: Advent+Pro;
+  	letter-spacing: 2px;
   	font-weight: 100;
   	padding: 30px;
   	text-shadow: 10px 5px 5px #000;
@@ -51,14 +76,101 @@
 .large-header a:hover{
 	background: rgba(4, 157, 191, 0.5);
 }
+/*/////////////////////ESTILOS DEL CONTENIDO GENERAL/////////////////////////*/
 .contenedorGeneral{
-	background: #023859;
+	background: #F1F2EB;
 	width: 100%;
 	height: 100%;
-	display: none;
+	position: relative;
 }
-
-
+.contenedorGeneral .cara-1{
+	margin: auto;
+  	display: block;
+  	background: url(../img/face1.png)no-repeat;
+  	height: 250px;
+  	width: 250px;
+  	background-size: 250px;
+  	position: absolute;
+  	left: 0;
+  	right: 0;
+  	top: -50px;
+  	opacity: 0
+}
+.contenedorGeneral .cara-2{
+	margin: auto;
+  	background: url(../img/face2.png)no-repeat;
+  	height: 250px;
+  	width: 250px;
+  	background-size: 250px;
+  	position: absolute;
+  	left: 0;
+  	right: 0;
+  	top: 50px;
+  	display: none;
+  	opacity: 0;
+}
+.contenedorGeneral p{
+	width: 60%;
+	text-align: center;
+	margin: auto;
+	color: #011826;
+}
+.contenedorGeneral .name{
+	padding-top: 315px;
+	font-size: 25px;
+	width: 45%;
+	line-height: 30px;
+}
+.contenedorGeneral .legend{
+	font-style: italic;
+}
+.contenedorGeneral img {
+  	width: 50px;
+  	background-color: #03658C;
+  	padding: 10px;
+}
+.contenedorGeneral img:hover{
+	background-color: #011826;
+}
+.contenedorGeneral .menuSite {
+  background-color: #F1F2EB;
+  width: 200px;
+  margin-top: 10px;
+  position: absolute;
+  display: none;
+  opacity: 0;
+  bottom: 50px;
+  z-index: 1;
+}
+.contenedorGeneral .menuSite ul{
+	margin-left: 0px;
+}
+.contenedorGeneral .menuSite ul li{
+	list-style: none;
+  	color: #03658C;
+  	text-align: center;
+  	letter-spacing: 3px;
+  	padding: 20px;
+  	border-bottom: 1px solid #03658C;
+}
+.contenedorGeneral .menuSite ul li:hover{
+	color: #03658C;
+	border-bottom: 3px solid #03658C;
+	background: #E7E8E1;
+}
+.all .container{
+	background: #011826;
+	height: auto;
+	padding-bottom: 50px;
+}
+.all .container p.title{
+	width: 70%;
+  	margin: auto;
+  	text-align: center;
+  	padding: 50px 0px;
+  	font-weight: 100;
+  	font-size: 30px;
+}
 
 
 
@@ -74,5 +186,6 @@
 	}
 	.frase{
 		font-size: 20px;
+		width: 90%;
 	}
 }
